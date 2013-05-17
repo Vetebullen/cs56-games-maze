@@ -1,10 +1,10 @@
 <project default="compile">
 
-  <!-- build.xml for MazeGame, S12, CS56
-       name: Jakob Staahl -->
+  <!-- build.xml for MazeGame, S13, CS56
+       name: Gunnar Weibull-->
 
   <property name="projectName" value="MazeGame" />   
-  <property name="mainClass" value="edu.ucsb.cs56.S12.jstaahl.issue769.MazeGui" />
+  <property name="mainClass" value="edu.ucsb.cs56.S13.gweibull.issue5.MazeGui" />
   <property environment="env"/> <!-- load the environment variables --> 
   <property name="projectPath" value="cs56/S12/issues/0000769" />
   <property name="webRoot" value="${env.HOME}/public_html" />
@@ -19,7 +19,7 @@
     <javac srcdir="src" destdir="build" includeantruntime="false" debug="true" debuglevel="lines,vars,source" >
       <classpath>
 	<pathelement location="build"/>
-	<pathelement location="/cs/faculty/pconrad/public_html/cs56/lib/junit-4.8.2.jar"/>
+	 <pathelement location="lib/junit-4.8.2.jar"/>
       </classpath>
     </javac>
   </target>
@@ -67,7 +67,7 @@ endCol: (numCols-1)
     <javadoc  destdir="javadoc" author="true" version="true" use="true" >
       <fileset dir="src" includes="**/*.java"/>
       <classpath>
-	<pathelement location="/cs/faculty/pconrad/public_html/cs56/lib/junit-4.8.2.jar"/>
+	<pathelement location="lib/junit-4.8.2.jar"/>
       </classpath>
     </javadoc>
     
@@ -95,7 +95,7 @@ endCol: (numCols-1)
 
     <junit haltonerror="no" haltonfailure="no">
       <classpath>
-	<pathelement location="/cs/faculty/pconrad/public_html/cs56/lib/junit-4.8.2.jar"/>
+	<pathelement location="lib/junit-4.8.2.jar"/>
 	<pathelement location="build"/>
       </classpath>
       
